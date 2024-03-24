@@ -1,0 +1,11 @@
+.stopwatchBody {
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+.startStopButtons{
+  display: flex;
+  gap: 1%;
+  justify-content: center;
+}
