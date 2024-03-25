@@ -4,8 +4,24 @@
   justify-content: center;
 }
 
-.startStopButtons{
+.startStopButtons {
   display: flex;
   gap: 1%;
   justify-content: center;
+}
+
+.toDoHeading {
+  display: flex;
+  justify-content: center;
+}
+
+.toDoCreate {
+  display: flex;
+  justify-content: center;
+}
+
+.toDoItems {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
 }
