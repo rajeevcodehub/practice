@@ -9,6 +9,9 @@ const Home = () => {
             <li >
                 <Link to="/toDo">To Do</Link>
             </li>
+            <li >
+                <Link to="/progressbar">ProgressBar</Link>
+            </li>
         </ul>
     );
 }
