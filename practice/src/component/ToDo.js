@@ -1,11 +1,13 @@
 import React, { useRef, useState } from "react";
 import { MdEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
+import { MdSave } from "react-icons/md";
 const ToDo = () => {
   const [toDos, setToDos] = useState([]);
+  const [edit, setEdit] = useState({ isEdit: false, key: null });
   const ref = useRef();
 
-  const handleAddTask  = () => {
+  const handleAddTask = () => {
     setToDos((toDos) => [
       ...toDos,
       { task: ref.current.value, key: toDos.length + 1 },
@@ -14,6 +16,7 @@ const ToDo = () => {
 
   const handleEdit = (key) => {
     console.log(key);
+    setEdit({ isEdit: true, key: key });
   };
 
   const handleDelete = (key2) => {
@@ -35,13 +38,22 @@ const ToDo = () => {
           {toDos?.map(({ task, key }) => {
             return task ? (
               <div className="toDoItems">
-                <li>{task}</li>{" "}
-                <MdEdit
-                  onClick={() => {
-                    handleEdit(key);
-                  }}
-                  style={{ fontSize: "1.3em" }}
-                />
+                {edit.isEdit && edit.key === key ? (
+                  <div>
+                    <input type="text" value={task} /> <MdSave />
+                  </div>
+                ) : (
+                  <div style={{display: "flex"}}>
+                    <li>{task}</li>
+                    <MdEdit
+                      onClick={() => {
+                        handleEdit(key);
+                      }}
+                      style={{ fontSize: "1.3em" }}
+                    />
+                  </div>
+                )}
+
                 <MdDelete
                   onClick={() => {
                     handleDelete(key);
