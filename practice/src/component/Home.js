@@ -12,6 +12,9 @@ const Home = () => {
             <li >
                 <Link to="/progressbar">ProgressBar</Link>
             </li>
+            <li >
+                <Link to="/animation">Animation</Link>
+            </li>
         </ul>
     );
 }

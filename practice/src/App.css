@@ -25,3 +25,53 @@
   justify-content: center;
   gap: 1%;
 }
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border-radius: 2%;
+  animation-name: translatex;
+  animation-timing-function: ease-in-out; /* ease-in - The animation starts slowly and gradually accelerates as it progresses. ease-out : Towards the end of the animation, it slows down gradually, creating a smooth deceleration effect. */
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes translatex {
+  0% {
+    margin-left: 0px;
+  }
+
+  50% {
+    margin-left: calc(100% - 100px);
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+
+@keyframes translate {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(360px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate {
+  display: flex;
+  /* justify-content: center; */
+  padding: 2%;
+}
