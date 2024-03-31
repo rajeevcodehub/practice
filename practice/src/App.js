@@ -7,6 +7,7 @@ import Home from "./component/Home";
 import StopWatch from "./component/Stopwatch";
 import ToDo from "./component/ToDo";
 import ProgressBar from "./component/ProgressBar";
+import Animation from "./component/Animation";
 
 function App() {
   const router = createBrowserRouter([
@@ -25,6 +26,10 @@ function App() {
     {
       path: "/progressbar",
       element: <ProgressBar />,
+    },
+    {
+      path: "/animation",
+      element: <Animation />,
     },
   ]);
   return (

@@ -8,18 +8,22 @@ const ToDo = () => {
   const ref = useRef();
 
   const handleAddTask = () => {
+    let newTask = ref.current.value;
     setToDos((toDos) => [
       ...toDos,
-      { task: ref.current.value, key: toDos.length + 1 },
+      { task: newTask, key: toDos.length + 1 },
     ]);
+    ref.current.value = "";
   };
 
   const handleEdit = (key) => {
-    console.log(key);
+   
     setEdit({ isEdit: true, key: key });
   };
 
   const handleDelete = (key2) => {
+    console.log(toDos);
+    console.log(key2);
     let res = toDos.filter((task, key) => {
       return key2 - 1 !== key;
     });
