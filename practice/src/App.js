@@ -8,6 +8,7 @@ import StopWatch from "./component/Stopwatch";
 import ToDo from "./component/ToDo";
 import ProgressBar from "./component/ProgressBar";
 import Animation from "./component/Animation";
+import WhackAMole from "./component/WhackAMole";
 
 function App() {
   const router = createBrowserRouter([
@@ -30,6 +31,10 @@ function App() {
     {
       path: "/animation",
       element: <Animation />,
+    },
+    {
+      path: "/whack-a-mole",
+      element: <WhackAMole />,
     },
   ]);
   return (
