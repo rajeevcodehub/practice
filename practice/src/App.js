@@ -9,6 +9,8 @@ import ToDo from "./component/ToDo";
 import ProgressBar from "./component/ProgressBar";
 import Animation from "./component/Animation";
 import WhackAMole from "./component/WhackAMole";
+import Debouncing from "./component/Debouncing";
+import Throttling from "./component/Throttling";
 
 function App() {
   const router = createBrowserRouter([
@@ -35,6 +37,14 @@ function App() {
     {
       path: "/whack-a-mole",
       element: <WhackAMole />,
+    },
+    {
+      path: "/debouncing",
+      element: <Debouncing />,
+    },
+    {
+      path: "/throttling",
+      element: <Throttling />,
     },
   ]);
   return (
