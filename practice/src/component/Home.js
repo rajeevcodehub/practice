@@ -18,6 +18,12 @@ const Home = () => {
             <li >
                 <Link to="/whack-a-mole">Whack-A-Mole</Link>
             </li>
+            <li >
+                <Link to="/debouncing">using Debouncing</Link>
+            </li>
+            <li >
+                <Link to="/throttling">using Throttling</Link>
+            </li>
         </ul>
     );
 }
