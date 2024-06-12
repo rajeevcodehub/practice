@@ -24,7 +24,6 @@ const Calculator = () => {
   const [calculatedValue, setCalculatedValue] = useState("");
   const handleClick = (e) => {
     const id = e.target.id;
-    console.log(e.target.innerText);
     if (id === "C") {
       setValue("");
     } else if (id === "=") {
