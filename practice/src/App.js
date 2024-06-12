@@ -11,6 +11,7 @@ import Animation from "./component/Animation";
 import WhackAMole from "./component/WhackAMole";
 import Debouncing from "./component/Debouncing";
 import Throttling from "./component/Throttling";
+import Calculator from "./component/Calculator";
 
 function App() {
   const router = createBrowserRouter([
@@ -45,6 +46,10 @@ function App() {
     {
       path: "/throttling",
       element: <Throttling />,
+    },
+    {
+      path: "/calculator",
+      element: <Calculator />,
     },
   ]);
   return (

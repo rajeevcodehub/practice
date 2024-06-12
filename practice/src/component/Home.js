@@ -24,6 +24,9 @@ const Home = () => {
             <li >
                 <Link to="/throttling">using Throttling</Link>
             </li>
+            <li >
+                <Link to="/calculator">Calculator</Link>
+            </li>
         </ul>
     );
 }
