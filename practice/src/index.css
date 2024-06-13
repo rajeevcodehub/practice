@@ -37,9 +37,22 @@ code {
   cursor: pointer;
 }
 
+.post {
+  padding: 0.5%;
+  background-color: blanchedalmond;
+  margin-top: 0.5%;
+  display: flex;
+}
+
 input {
   width: 310px;
   height: 40px;
   font-size: 40px;
   border: solid;
 }
+
+.post-body {
+  padding: 1%;
+}
+
+

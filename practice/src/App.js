@@ -12,6 +12,7 @@ import WhackAMole from "./component/WhackAMole";
 import Debouncing from "./component/Debouncing";
 import Throttling from "./component/Throttling";
 import Calculator from "./component/Calculator";
+import LazyLoadDemo from "./component/LazyLoadDemo";
 
 function App() {
   const router = createBrowserRouter([
@@ -50,6 +51,10 @@ function App() {
     {
       path: "/calculator",
       element: <Calculator />,
+    },
+    {
+      path: "/lazyload",
+      element: <LazyLoadDemo />,
     },
   ]);
   return (
