@@ -27,6 +27,9 @@ const Home = () => {
             <li >
                 <Link to="/calculator">Calculator</Link>
             </li>
+            <li >
+                <Link to="/lazyload">Lazy Load Demo</Link>
+            </li>
         </ul>
     );
 }
